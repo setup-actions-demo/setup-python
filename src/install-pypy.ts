@@ -173,9 +173,10 @@ async function installPip(pythonLocation: string) {
   core.info('Installing and updating pip');
   const pythonBinary = path.join(pythonLocation, 'python');
   await exec.exec(`${pythonBinary} -m ensurepip`);
-
+  core.info('used --upgrade');
   await exec.exec(
-    `${pythonLocation}/python -m pip install --ignore-installed pip`
+    `${pythonLocation}/python -m pip install --upgrade pip`
+      
   );
 }
 
