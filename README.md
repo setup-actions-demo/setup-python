@@ -11,7 +11,7 @@ This action provides the following functionality for GitHub Actions users:
 - Optionally caching dependencies for pip, pipenv and poetry
 - Registering problem matchers for error output
 
-## Basic usage
+## Basic usage is
 
 See [action.yml](action.yml)
 
